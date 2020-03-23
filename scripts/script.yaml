@@ -12,8 +12,9 @@
 
     -name: return-user
       steps:
-          - say: טוב לראותך שוב.
-          - say: על מי ברצונך לדווח עכשיו?
+          - say: הי! טוב לראותך שוב
+          - say: הדיווחים שלך ושל אחרים עד עכשיו ממש מקדמים אותנו במאבק בקורונה
+          - say: עבור מי ברצונך לדווח עכשיו?
           - wait:      
               variable: entry
               options:
@@ -21,14 +22,17 @@
                   value: 3242371
                 - show: בת 41 משד׳ בן ציון
                   value: 6232672
-                - show: דיווח חדש
+                - show: דיווח חדש בשד׳ בן ציון
+                  value: new-entry-in-address
+                - show: דיווח חדש בכתובת אחרת
                   value: new-entry
 
       - name: personal-details
         steps:
-          - say: שלום, הגעת למערכת דיווח בריאות.
+          - say: טוב שבאת,
+          - say: התשובות שלך לכמה שאלות קצרות יעזרו מאוד במאמץ המשותף לעצור את התפרצות הקורונה
                           
-          - say:  אם זה בסדר, אבקש לדעת כמה פרטים אנונימיים לטובת המחקר.
+          - say: אם זה בסדר, אבקש לדעת כמה פרטים אנונימיים לטובת המחקר
           - say: קודם כל, מה גילך?
           - wait:
               variable: age
@@ -43,9 +47,7 @@
                   value: female
                 - show: בן 43
                   value: male
-              
-          - say: נהדר, מחר כשנפגש פה שוב, נתייחס לדיווח כאל ״בן 43״
-                
+        
           - say: מה הוא מקום מגוריך?
           - wait:
               variable: city_town
@@ -56,6 +58,7 @@
               variable: street
               placeholder: שם הרחוב
 
+          - say: נהדר, מחר כשנפגש פה שוב, נתייחס לדיווח הזה כאל ״בן 43 משד׳ בן ציון״
 
       - name: preconditions
         steps:
@@ -181,7 +184,7 @@
           - say: מה שלומך היום?
           - wait:
               options:
-                - show: מצויין!
+                - show: בסדר גמור
                 - show: לא כל כך טוב
                   steps:                    
                     - goto: current-report-symptoms
@@ -225,7 +228,7 @@
                   unless: toplevel_symptoms_cough
                   value: toplevel_symptoms_cough
                   steps:
-                    - say: נשמח לעוד כמה פרטים בנוגע לגבי תופעות השיעול והנזלת. 
+                    - say: נשמח לעוד כמה פרטים בנוגע לתופעות השיעול והנזלת. 
                     - goto: symptoms_cough_questions
                     - say: יש עוד בעיות שקשורות בשיעולים או נזלת?
                     - goto: symptoms_cough_questions
