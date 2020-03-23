@@ -10,6 +10,20 @@
         - goto: exposures
         - goto: end-of-report
 
+    -name: return-user
+      steps:
+          - say: טוב לראותך שוב.
+          - say: על מי ברצונך לדווח עכשיו?
+          - wait:      
+              variable: entry
+              options:
+                - show: בן 43 משד׳ בן ציון
+                  value: 3242371
+                - show: בת 41 משד׳ בן ציון
+                  value: 6232672
+                - show: דיווח חדש
+                  value: new-entry
+
       - name: personal-details
         steps:
           - say: שלום, הגעת למערכת דיווח בריאות.
@@ -21,14 +35,14 @@
               placeholder: "גיל"
               input-kind: number
               
-          - say: בן? בת?
+          - say: נקבה? זכר?
           - wait:      
               variable: sex
               options:
-                - show: בן
-                  value: male
-                - show: בת
+                - show: נקבה
                   value: female
+                - show: זכר
+                  value: male
                 
           - say: מה הוא מקום מגוריך?
           - wait:
