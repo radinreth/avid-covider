@@ -35,14 +35,16 @@
               placeholder: "גיל"
               input-kind: number
               
-          - say: נקבה? זכר?
+          - say: בת 43? או בן 43?
           - wait:      
               variable: sex
               options:
-                - show: נקבה
+                - show: בת 43
                   value: female
-                - show: זכר
+                - show: בן 43
                   value: male
+              
+          - say: נהדר, מחר כשנפגש פה שוב, נתייחס לדיווח כאל ״בן 43״
                 
           - say: מה הוא מקום מגוריך?
           - wait:
