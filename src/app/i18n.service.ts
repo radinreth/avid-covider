@@ -9,6 +9,6 @@ export class  I18nService {
   ltr = false;
 
   constructor(@Inject(LOCALE_ID) public locale: string) {
-    this.ltr = locale === 'en' || locale === 'es' || locale === 'ru' || locale === 'fr';
+    this.ltr = locale === 'en' || locale === 'km-KH' || locale === 'es' || locale === 'ru' || locale === 'fr';
   }
 }
