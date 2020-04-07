@@ -62,7 +62,7 @@ def assign_ids(x, stack=[]):
         return
 
 TRANSIFEX_TOKEN = os.environ.get('TRANSIFEX_TOKEN') or  os.environ.get('TX_TOKEN')
-LANGUAGES = ('ar', 'am', 'en', 'ru', 'es', 'fr')
+LANGUAGES = ('ar', 'am', 'en', 'km-KH', 'ru', 'es', 'fr')
 
 def assign_translations(x, stack, parent=None, parentkey=None, translations=None, fields=(), field_in_key=False):
     if isinstance(x, dict):
@@ -233,7 +233,7 @@ def create_assets(script):
 
 if __name__=='__main__':
     f_in = Path('scripts/script.yaml')
-    scripts = yaml.load(f_in.open())
+    scripts = yaml.load(f_in.open(), Loader=yaml.BaseLoader)
     assign_ids(scripts, [str(f_in)])
 
     if TRANSIFEX_TOKEN:
