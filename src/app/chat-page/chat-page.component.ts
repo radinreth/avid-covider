@@ -248,9 +248,10 @@ export class ChatPageComponent implements OnInit, AfterViewInit {
       }),
       switchMap((payload) => {
         if (window.location.hostname === 'coronaisrael.org') {
-          return this.http.post('https://europe-west2-hasadna-general.cloudfunctions.net/avid-covider-secure', payload);
+          return this.http.post('https://us-central1-covid-16-ccdc.cloudfunctions.net/py-avid', payload);
         } else {
           console.log('WOULD SEND', payload);
+          this.http.post('https://us-central1-covid-16-ccdc.cloudfunctions.net/py-avid', payload);
           return of({success: true});
         }
       }),
