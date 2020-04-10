@@ -208,31 +208,11 @@ export const script = {
                         "uid": "8c6d2e311f"
                       },
                       {
-                        "say": {
-                          ".tx": {
-                            "_": "הכי טוב כשכולם מדווחים על עצמם בכל יום",
-                            "ar": "مُفضّل كل واحد/ة يقوم بتعبئة الإستبيان عن نفسه يوميًا",
-                            "en": "The best way is to have each family member report how they are feeling every day",
-                            "es": "Lo mejor es que todos informan sobre sí mismos cada día",
-                            "fr": "Le mieux serait que chacun remplisse ce questionnaire chaque jour",
-                            "km-KH": "វិធីល្អបំផុតគឺត្រូវរាយការណ៍ពីអារម្មណ៍របស់សមាជិកគ្រួសារម្នាក់ៗជារៀងរាល់ថ្ងៃ",
-                            "ru": "Лучше всего когда каждый ежедневно заполняет анкету сам за себя"
-                          }
-                        },
+                        "say": "הכי טוב כשכולם מדווחים על עצמם בכל יום",
                         "uid": "34f7fd91ef"
                       },
                       {
-                        "say": {
-                          ".tx": {
-                            "_": "אבל אם זה לא מסתדר, אפשר להקריא להם את השאלות או פשוט לענות בשמם",
-                            "ar": "لكن إذا كان صعب, ممكن تقرأ/ي لهم الأسئلة أو ببساطة أن تُجيب/ي بإسمهم",
-                            "en": "Or, if it's more convenient, you can read them the questions or just answer for them",
-                            "es": "Pero si no es posible, puedes leerles las preguntas o responder en su lugar",
-                            "fr": "Mais si cela ne convient pas, vous pouvez leur lire les questions ou simplement répondre en leur nom",
-                            "km-KH": "ឬដើម្បីអោយងាយស្រួល អ្នកអាចអានសំណួរទាំងនោះឬគ្រាន់តែឆ្លើយអោយពួកគេ",
-                            "ru": "Но если не получается, вы можете зачитать им вопросы или просто заполнить за них"
-                          }
-                        },
+                        "say": "אבל אם זה לא מסתדר, אפשר להקריא להם את השאלות או פשוט לענות בשמם",
                         "uid": "a46ed1d5ca"
                       }
                     ],
@@ -661,7 +641,7 @@ export const script = {
                 ".tx": {
                   "_": "אשאל אותך על מחלות, שחשוב לנו לדעת אם אובחנו אצלך בעבר או שיש לך כיום:",
                   "ar": "بدي أسألك عن أمراض, اللي مهم لإلنا نعرف إذا تم تشخيصك بأي منها الآن أو في السابق:",
-                  "en": "I'm going to ask about diseases, it's important to know whether you were diagnosed with them in the past and/or you are suffering from them now. ",
+                  "en": "I'm going to ask about diseases, it's important to know whether you were diagnosed with them in the past and/or you are suffering from them now:",
                   "es": "Te preguntaré sobre algunas enfermedades, es importante que sepamos si te las han diagnosticado en el pasado:",
                   "fr": "Je vais vous poser des questions sur différentes maladies, et il est important pour nous de savoir si vous avez été diagnostiqué dans le passé ou si vous en souffrez aujourd'hui:",
                   "km-KH": "ខ្ញុំនឹងសួរអ្នកអំពីជំងឺ វាសំខាន់ណាស់ដែលយើងត្រូវដឹងថាតើអ្នកធ្លាប់បានធ្វើរោគវិនិច្ឆ័យកាលពីមុន និង / ឬក៏ កំពុងមានជំងឺទាំងនោះ។",
@@ -2281,45 +2261,15 @@ export const script = {
           "name": "exposures",
           "steps": [
             {
-              "say": {
-                ".tx": {
-                  "_": "חשוב לנו לדעת",
-                  "ar": "مهم إلنا نعرف",
-                  "en": "Another piece of important information",
-                  "es": "Nos es importante saber",
-                  "fr": "Il est important pour nous de savoir",
-                  "km-KH": "ព័ត៌មានសំខាន់មួយទៀត",
-                  "ru": "Нам важно знать"
-                }
-              },
+              "say": "חשוב לנו לדעת",
               "uid": "8a4526029f"
             },
             {
-              "say": {
-                ".tx": {
-                  "_": "אם שהית בקרבת אנשים שונים ביממה האחרונה למשך יותר מ-15 דקות ובמרחק של פחות מ-2 מטרים,",
-                  "ar": "إذا كنت بقرب ناس مختلفين في آخر يومين لأكثر من 15 دقيقة وبمسافة أقل من مترين,",
-                  "en": "if any other people have been within 2 meters of you for more than 15 minutes in the past 24 hours",
-                  "es": "Si has estado con personas diferentes durante el último día,  más de 15 minutos y a una distancia inferior a 2 metros",
-                  "fr": "Si au cours des dernières 24 heures, vous étiez en présence de personnes pendant plus de 15 minutes et à moins de 2 mètres,",
-                  "km-KH": "ប្រសិនបើមានមនុស្សផ្សេងទៀតស្ថិតនៅចម្ងាយរវាង 2 ម៉ែត្រពីអ្នកក្នុងរយៈពេលជាង 15 នាទីក្នុងកំឡុង 24 ម៉ោងចុងក្រោយ",
-                  "ru": "Если за последние сутки Вы находились рядом с другими людьми на расстоянии менее 2-х метров и на протяжении более 15 минут,"
-                }
-              },
+              "say": "אם שהית בקרבת אנשים שונים ביממה האחרונה למשך יותר מ-15 דקות ובמרחק של פחות מ-2 מטרים,",
               "uid": "933db4184c"
             },
             {
-              "say": {
-                ".tx": {
-                  "_": "כמה מהם מתחת לגיל 18?",
-                  "ar": "قديش منهم تحت ال18؟",
-                  "en": "How many are under 18?",
-                  "es": "¿Cuántos de ellos son menores de 18 años?",
-                  "fr": "Combien d'entre eux ont moins de 18 ans ?",
-                  "km-KH": "ហើយមានប៉ុន្មាននាក់អាយុក្រោម 18 ឆ្នាំ?",
-                  "ru": "Скольким из них менее 18 лет?"
-                }
-              },
+              "say": "כמה מהם מתחת לגיל 18?",
               "uid": "d6876d7311"
             },
             {
@@ -2328,33 +2278,13 @@ export const script = {
                 "input-kind": "number",
                 "input-max": "99",
                 "input-min": "0",
-                "placeholder": {
-                  ".tx": {
-                    "_": "מספר האנשים, 0-99",
-                    "ar": " عدد الأشخاص, 0-99",
-                    "en": "Number of people, 0-99",
-                    "es": "Cantidad de personas, 0-99",
-                    "fr": "Nombre de personnes, 0-99",
-                    "km-KH": "ចំនួនមនុស្សពី ០ ទៅ 99 នាក់",
-                    "ru": "Количество людей, 0-99"
-                  }
-                },
+                "placeholder": "מספר האנשים, 0-99",
                 "validation": "[0-9]+",
                 "variable": "met_under_18"
               }
             },
             {
-              "say": {
-                ".tx": {
-                  "_": "וכמה מעל גיל 18?",
-                  "ar": "وقديش منهم فوق ال18؟",
-                  "en": "And how many are over 18?",
-                  "es": "¿Cuántos son mayores de 18 años?",
-                  "fr": "Et combien ont plus de 18 ans ?",
-                  "km-KH": "ហើយមានប៉ុន្មាននាក់អាយុលើសពី 18 ឆ្នាំ?",
-                  "ru": "А скольким больше 18?"
-                }
-              },
+              "say": "וכמה מעל גיל 18?",
               "uid": "c5118716df"
             },
             {
@@ -2363,17 +2293,7 @@ export const script = {
                 "input-kind": "number",
                 "input-max": "99",
                 "input-min": "0",
-                "placeholder": {
-                  ".tx": {
-                    "_": "מספר האנשים, 0-99",
-                    "ar": " عدد الأشخاص, 0-99",
-                    "en": "Number of people, 0-99",
-                    "es": "Cantidad de personas, 0-99",
-                    "fr": "Nombre de personnes, 0-99",
-                    "km-KH": "ចំនួនមនុស្ស 0 ទៅ 99 នាក់",
-                    "ru": "Количество людей, 0-99"
-                  }
-                },
+                "placeholder": "מספר האנשים, 0-99",
                 "validation": "[0-9]+",
                 "variable": "met_above_18"
               }
